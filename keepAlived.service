@@ -1,0 +1,11 @@
+[Unit]
+Description=shit
+
+[Service]
+User=root
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/local/bin/keepAlived.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
